@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map - creates a new array by transforming every element in an array. We can use .map if we have an array with names and time, and want to change all the names to lowercase.
+
+.reduce - takes all of the elements in an array and reduces them into a single value. We can use .reduce when we have a array of population and want to know the total population.
+
+.filter - creates a new array by removing elements that don't belong. We can use .filter when we have an array of population and filter out population with less than 5.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher-order function is a function that receives otehr functions. A callback function is a function taht is passed into another function as an argument.
 
 3. Explain what a closure is.
 
+A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function.
+
 4. Describe the four principles of the 'this' keyword.
 
+Window binding -if we haven't given 'this' any context it will return the window, the global object in node or undefined in strict mode.
+
+Implicit binding - Applies to objects with methods. When the function (method) is invoked, look the the left of the dot, that's what 'this' refers to.
+
+Explicit binding - we tell a function what the 'this' keyword should be using .call, .apply or .bind. Call will immediately invoke the function and you pass in your arguments 1 by 1. Apply will immediately invoke the function and you pass in your arguments as an array. Bind you pass in your arguments 1 by 1, but it will not immediately invoke the function, instead it returns a brand new function that can be invoked later.
+
+New binding - When a function is invoked with a new keyword the this keyword inside that function is bound to the new object being constructed. When a function is invoked as a constructor function using the new keyword, this points to the new object that’s created.
+
 5. Why do we need super() in an extended class?
+
+It is used to access and call functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
